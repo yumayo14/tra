@@ -11,3 +11,6 @@ writer.close
 while message = reader.gets
   $stdout.puts message
 end
+
+# fork do の部分で実質4つの実体が存在する
+# 親側のwriter と 子側の reader は閉じる
